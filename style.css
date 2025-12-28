@@ -1,0 +1,83 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* TOP BAR */
+.top-bar {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.top-bar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.top-bar i {
+    margin-right: 6px;
+}
+
+/* HEADER */
+.header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.logo img {
+    height: 45px;
+}
+
+/* NAV */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #2ecc71; /* verde din poză */
+}
+
+/* HAMBURGER */
+.hamburger {
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* RESPONSIVE – MOBILE */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
