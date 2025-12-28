@@ -11,12 +11,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <script>
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
+document.addEventListener("DOMContentLoaded", function () {
 
-    hamburger.addEventListener('click', () => {
-        mobileMenu.classList.toggle('show');
-    });
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    if (hamburger && mobileMenu) {
+        hamburger.addEventListener("click", function () {
+            mobileMenu.classList.toggle("show");
+        });
+    }
+
+});
 </script>
 <body>
 

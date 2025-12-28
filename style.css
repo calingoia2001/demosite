@@ -78,7 +78,7 @@
     }
 
     .nav-links {
-        /*display: none;*/
+        display: none;
         position: absolute;
         top: 60px;
         right: 0;
