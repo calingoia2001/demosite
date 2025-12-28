@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tractări & Închirieri Auto</title>
+    <title>Despre Noi – Tractări Auto</title>
 
-    <!-- Font Awesome pentru iconițe -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
     <link rel="stylesheet" href="style.css">
 </head>
+
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-
     const hamburger = document.getElementById("hamburger");
     const mobileMenu = document.getElementById("mobileMenu");
 
@@ -21,9 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
             mobileMenu.classList.toggle("show");
         });
     }
-
 });
 </script>
+
 <body>
 
 <!-- TOP BAR -->
@@ -32,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
         <i class="fa-solid fa-phone"></i>
         <a href="tel:+40123456789">+40 123 456 789</a>
     </div>
-
     <div class="top-bar-right">
         <a href="https://facebook.com" target="_blank">
             <i class="fa-brands fa-facebook-f"></i>
@@ -43,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
 <!-- HEADER -->
 <header class="header">
     <div class="header-container">
-
         <div class="logo">
             <img src="images/logo.png" alt="Logo">
         </div>
@@ -52,8 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
             <ul class="nav-links" id="mobileMenu">
                 <li><a href="index.html">ACASĂ</a></li>
                 <li><a href="despre.html">DESPRE NOI</a></li>
-                <li><a href="tarife.html">TARIFE</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="#">TARIFE</a></li>
+                <li><a href="#">CONTACT</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <i class="fa-solid fa-bars"></i>
@@ -61,28 +57,80 @@ document.addEventListener("DOMContentLoaded", function () {
         </nav>
     </div>
 </header>
-<!-- SECTIUNE SERVICII -->
-<section class="services">
 
-    <a href="tractari.html" class="service-card tractari">
-        <div class="overlay">
-            <h2>TRACTĂRI AUTO</h2>
-            <p>Asistență rapidă, non-stop</p>
-        </div>
-    </a>
+<!-- DESPRE NOI -->
+<section class="about">
 
-    <a href="inchirieri.html" class="service-card inchirieri">
-        <div class="overlay">
-            <h2>ÎNCHIRIERI AUTO</h2>
-            <p>Mașini curate, prețuri corecte</p>
+    <div class="about-header">
+        <span>Despre Noi</span>
+        <h1>Tractări Auto Alba</h1>
+    </div>
+
+    <div class="about-content">
+        <!-- IMAGE -->
+        <div class="about-image">
+            <img src="images/despre.png" alt="Tractări Auto">
         </div>
-    </a>
+
+        <!-- TEXT -->
+        <div class="about-text">
+            <p>
+                Alegând serviciile noastre de tractări auto, beneficiezi de intervenții rapide, 
+                tarife corecte și profesionalism. Dispunem de platforme moderne, adaptate pentru 
+                transportul vehiculelor de până la 3 tone, oferind un nivel ridicat de siguranță 
+                pe tot parcursul operațiunii. Indiferent dacă este vorba despre autoturisme, SUV-uri 
+                sau autoutilitare, echipa noastră este pregătită să intervină prompt și eficient, 
+                adaptându-se cerințelor tale.
+            </p>
+
+            <h3>De ce Tractări Auto Alba?</h3>
+
+            <ul class="about-list">
+                <li>
+                    <strong>Disponibilitate 24/7</strong>
+                    <span>Suntem mereu pregătiți să intervenim, indiferent de oră.</span>
+                </li>
+                <li>
+                    <strong>Servicii accesibile</strong>
+                    <span>Oferim prețuri corecte, fără surprize.</span>
+                </li>
+                <li>
+                    <strong>Răspuns rapid</strong>
+                    <span>Intervenim prompt, în orice situație.</span>
+                </li>
+                <li>
+                    <strong>Flotă modernă</strong>
+                    <span>Transportăm vehicule de până la 3T în siguranță.</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- STATS -->
+    <div class="about-stats">
+        <div class="stat-box">
+            <h2>12</h2>
+            <p>Mașini</p>
+        </div>
+        <div class="stat-box">
+            <h2>4</h2>
+            <p>Ani experiență</p>
+        </div>
+        <div class="stat-box">
+            <h2>52+</h2>
+            <p>Clienți mulțumiți</p>
+        </div>
+        <div class="stat-box">
+            <h2>200+</h2>
+            <p>Mașini tractate</p>
+        </div>
+    </div>
 
 </section>
+
 <!-- FOOTER -->
 <footer class="footer">
     <div class="footer-content">
-        <!-- MAP -->
         <div class="footer-box">
             <h3>Locația noastră</h3>
             <a href="https://www.google.com/maps" target="_blank" class="map-link">
@@ -90,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 Vezi pe Google Maps
             </a>
         </div>
-        <!-- CONTACT -->
+
         <div class="footer-box">
             <h3>Contact</h3>
             <p>
@@ -102,17 +150,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 Str. Exemplu nr. 10, Cluj-Napoca
             </p>
         </div>
-
     </div>
-    <!-- COPYRIGHT -->
+
     <div class="footer-bottom">
         © 2025 Tractări & Închirieri Auto. Toate drepturile rezervate.
     </div>
 </footer>
-<!-- CALL NOW BUTTON (MOBILE) -->
+
+<!-- CALL NOW -->
 <a href="tel:+40123456789" class="call-now">
     <i class="fa-solid fa-phone"></i>
     Sună acum
 </a>
+
 </body>
 </html>
