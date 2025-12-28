@@ -1,3 +1,13 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 /* RESET */
 * {
     margin: 0;
@@ -107,16 +117,18 @@
 /* SECTIUNE SERVICII */
 .services {
     display: flex;
-    gap: 20px;
-    padding: 30px 15px;
-    max-width: 1200px;
-    margin: auto;
+    gap: 30px;
+    padding: 40px 5vw;
+
+    flex-grow: 1;
+    align-items: center;
 }
 
 /* CARD GENERAL */
 .service-card {
     flex: 1;
-    height: 220px;
+    height: 300px;
+    width: 100%;
     position: relative;
     border-radius: 12px;
     overflow: hidden;
@@ -172,7 +184,7 @@
     }
 
     .service-card {
-        height: 180px;
+        height: 220px;
     }
 
     .service-card h2 {
@@ -184,7 +196,7 @@
 .footer {
     background-color: #1f1f1f;
     color: #ffffff;
-    margin-top: 40px;
+    margin-top: auto;
 }
 
 .footer-content {
@@ -236,6 +248,8 @@
     padding: 12px;
     font-size: 13px;
     color: #aaa;
+    margin-bottom: 0;
+    line-height: 1.4;
 }
 
 /* RESPONSIVE */
