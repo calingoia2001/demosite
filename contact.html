@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Tractări Auto</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    if (hamburger && mobileMenu) {
+        hamburger.addEventListener("click", function () {
+            mobileMenu.classList.toggle("show");
+        });
+    }
+});
+</script>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+    <div class="top-bar-left">
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:+40123456789">+40 123 456 789</a>
+    </div>
+    <div class="top-bar-right">
+        <a href="https://facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+    </div>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="header-container">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+
+        <nav class="nav">
+            <ul class="nav-links" id="mobileMenu">
+                <li><a href="index.html">ACASĂ</a></li>
+                <li><a href="despre.html">DESPRE NOI</a></li>
+                <li><a href="tarife.html">TARIFE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- CONTACT -->
+<section class="contact">
+
+    <div class="contact-header">
+        <span>Contact</span>
+        <h1>Datele companiei</h1>
+    </div>
+
+    <div class="contact-grid">
+
+        <!-- LEFT -->
+        <div class="contact-info">
+
+            <div class="info-row">
+                <i class="fa-solid fa-building"></i>
+                <div>
+                    <strong>Nume Companie</strong>
+                    <p>Auto Trans SRL</p>
+                </div>
+
+                <div>
+                    <strong>Reg. Comerțului</strong>
+                    <p>J10/2033/4234324</p>
+                </div>
+
+                <div>
+                    <strong>CUI</strong>
+                    <p>2314123</p>
+                </div>
+            </div>
+
+            <div class="info-row">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <strong>Adresă</strong>
+                    <p>Str. Progresului, nr. 16, România</p>
+                </div>
+            </div>
+
+            <div class="info-row">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                    <strong>Telefon</strong>
+                    <p><a href="tel:+40720318116">0720 318 116</a></p>
+                </div>
+                <a class="whatsapp" href="https://wa.me/40720318116" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+
+            <div class="info-row">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                    <strong>Email</strong>
+                    <p><a href="mailto:test@yahoo.com">test@yahoo.com</a></p>
+                </div>
+            </div>
+
+            <div class="info-row">
+                <i class="fa-solid fa-clock"></i>
+                <div>
+                    <strong>Program de lucru</strong>
+                    <p>Luni – Duminică: <span class="open">Deschis Non-Stop</span></p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="contact-side">
+
+            <h3>Social media</h3>
+            <div class="social-links">
+                <a href="#" class="social">Alba Auto</a>
+                <a href="https://facebook.com" class="social">Facebook</a>
+            </div>
+
+            <h3>Locația companiei</h3>
+            <p><strong>Alba Auto SRL</strong></p>
+
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8505.916435664292!2d26.613774959046587!3d46.27602521813125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b505005f190f1b%3A0x9618b12414e69598!2sCasa%20Lumi!5e0!3m2!1sro!2sro!4v1766958875485!5m2!1sro!2sro" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-box">
+            <h3>Locația noastră</h3>
+            <a href="https://www.google.com/maps" target="_blank" class="map-link">
+                <i class="fa-solid fa-location-dot"></i>
+                Vezi pe Google Maps
+            </a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+40123456789">+40 123 456 789</a>
+            </p>
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Str. Exemplu nr. 10, Cluj-Napoca
+            </p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2025 Tractări & Închirieri Auto. Toate drepturile rezervate.
+    </div>
+</footer>
+
+<!-- CALL NOW -->
+<a href="tel:+40123456789" class="call-now">
+    <i class="fa-solid fa-phone"></i>
+    Sună acum
+</a>
+
+</body>
+</html>
