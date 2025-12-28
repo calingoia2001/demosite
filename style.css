@@ -387,3 +387,80 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* TARIFE */
+.prices {
+    padding: 40px 5vw;
+}
+
+.prices-header span {
+    color: #2ecc71;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.prices-header h1 {
+    margin-top: 5px;
+    font-size: 28px;
+}
+
+.prices-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* CARD */
+.price-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.price-card img {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+    align-self: flex-end;
+}
+
+.price-content h3 {
+    font-size: 16px;
+}
+
+.offer {
+    font-size: 13px;
+    color: #555;
+}
+
+.price {
+    margin-top: 5px;
+}
+
+.price strong {
+    color: #2ecc71;
+}
+
+.price-desc {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #444;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .prices-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .price-card img {
+        align-self: flex-start;
+    }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarife – Tractări Auto</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    if (hamburger && mobileMenu) {
+        hamburger.addEventListener("click", function () {
+            mobileMenu.classList.toggle("show");
+        });
+    }
+});
+</script>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+    <div class="top-bar-left">
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:+40123456789">+40 123 456 789</a>
+    </div>
+    <div class="top-bar-right">
+        <a href="https://facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+    </div>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="header-container">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+
+        <nav class="nav">
+            <ul class="nav-links" id="mobileMenu">
+                <li><a href="index.html">ACASĂ</a></li>
+                <li><a href="despre.html">DESPRE NOI</a></li>
+                <li><a href="tarife.html">TARIFE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- TARIFE -->
+<section class="prices">
+
+    <div class="prices-header">
+        <span>Tarife Servicii de Tractări</span>
+        <h1>Prețuri și Oferte</h1>
+    </div>
+
+    <div class="prices-grid">
+
+        <!-- CARD 1 -->
+        <div class="price-card">
+            <div class="price-content">
+                <h3>Tractări Autoturisme pe Platformă</h3>
+                <p class="offer">Ofertă valabilă din 08.01.25 până în 31.12.25</p>
+                <p class="price">Preț <strong>150 RON</strong></p>
+            </div>
+            <img src="images/tarif1.jpeg" alt="Tractări autoturisme">
+            <div class="price-desc">
+                Oferim servicii de calitate pentru tractări autoturisme, SUV-uri.
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="price-card">
+            <div class="price-content">
+                <h3>Tractări Auto Avariate</h3>
+                <p class="offer">Ofertă valabilă din 08.01.25 până în 31.12.25</p>
+                <p class="price">Preț <strong>200 RON</strong></p>
+            </div>
+            <img src="images/tarif2.jpg" alt="Auto avariate">
+            <div class="price-desc">
+                Tractarea mașinilor avariate în condiții de siguranță, la prețuri corecte.
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="price-card">
+            <div class="price-content">
+                <h3>Tractări Autoutilitare</h3>
+                <p class="offer">Ofertă valabilă din 08.01.25 până în 31.12.25</p>
+                <p class="price">Preț <strong>250 RON</strong></p>
+            </div>
+            <img src="images/tarif3.jpg" alt="Autoutilitare">
+            <div class="price-desc">
+                Transport autoutilitare la cele mai bune prețuri. Nu ezitați să ne contactați.
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-box">
+            <h3>Locația noastră</h3>
+            <a href="https://www.google.com/maps" target="_blank" class="map-link">
+                <i class="fa-solid fa-location-dot"></i>
+                Vezi pe Google Maps
+            </a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+40123456789">+40 123 456 789</a>
+            </p>
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Str. Exemplu nr. 10, Cluj-Napoca
+            </p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2025 Tractări & Închirieri Auto. Toate drepturile rezervate.
+    </div>
+</footer>
+
+<!-- CALL NOW -->
+<a href="tel:+40123456789" class="call-now">
+    <i class="fa-solid fa-phone"></i>
+    Sună acum
+</a>
+
+</body>
+</html>
