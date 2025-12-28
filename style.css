@@ -71,10 +71,30 @@
     cursor: pointer;
 }
 
-/* RESPONSIVE – MOBILE */
+/* MOBILE MENU */
 @media (max-width: 768px) {
+    .nav {
+        position: relative;
+    }
+
     .nav-links {
-        display: none;
+        /*display: none;*/
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #ffffff;
+        flex-direction: column;
+        width: 200px;
+        padding: 15px 0;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .nav-links li {
+        padding: 10px 20px;
+    }
+
+    .nav-links.show {
+        display: flex;
     }
 
     .hamburger {

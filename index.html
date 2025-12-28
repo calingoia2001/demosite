@@ -10,6 +10,14 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('show');
+    });
+</script>
 <body>
 
 <!-- TOP BAR -->
@@ -35,19 +43,16 @@
         </div>
 
         <nav class="nav">
-            <ul class="nav-links">
+            <ul class="nav-links" id="mobileMenu">
                 <li><a href="#">ACASĂ</a></li>
                 <li><a href="#">DESPRE NOI</a></li>
                 <li><a href="#">TARIFE</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
-
-            <!-- Hamburger pentru mobil -->
-            <div class="hamburger">
+            <div class="hamburger" id="hamburger">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
-
     </div>
 </header>
 
