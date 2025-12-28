@@ -140,11 +140,11 @@ body {
 
 /* POZE */
 .service-card.tractari {
-    background-image: url("img/tractari.jpg");
+    background-image: url("images/tractari.jpg");
 }
 
 .service-card.inchirieri {
-    background-image: url("img/inchirieri.jpg");
+    background-image: url("images/inchirieri.jpg");
 }
 
 /* OVERLAY */
