@@ -13,6 +13,7 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
+    // HAMBURGER MENU
     const hamburger = document.getElementById("hamburger");
     const mobileMenu = document.getElementById("mobileMenu");
 
@@ -22,10 +23,21 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // MENIU ACTIV
+    const currentPage = window.location.pathname.split("/").pop();
+    const menuLinks = document.querySelectorAll(".nav-links a");
+
+    menuLinks.forEach(link => {
+        const linkPage = link.getAttribute("href");
+
+        if (linkPage === currentPage || (linkPage === "index.html" && currentPage === "")) {
+            link.classList.add("active");
+        }
+    });
+
 });
 </script>
 <body>
-
 <!-- TOP BAR -->
 <div class="top-bar">
     <div class="top-bar-left">
@@ -51,6 +63,8 @@ document.addEventListener("DOMContentLoaded", function () {
         <nav class="nav">
             <ul class="nav-links" id="mobileMenu">
                 <li><a href="index.html">ACASĂ</a></li>
+                <li><a href="tractari.html">TRACTARI AUTO</a></li>
+                <li><a href="inchirieri.html">INCHIRIERI AUTO</a></li>
                 <li><a href="despre.html">DESPRE NOI</a></li>
                 <li><a href="tarife.html">TARIFE</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
