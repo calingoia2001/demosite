@@ -15,29 +15,52 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const hamburger = document.getElementById("hamburger");
     const mobileMenu = document.getElementById("mobileMenu");
+    const menuLinks = document.querySelectorAll(".nav-links a");
 
-    // Toggle meniu la click pe hamburger
-    hamburger.addEventListener("click", function (e) {
-        e.stopPropagation(); // 🔥 previne închiderea instant
-        mobileMenu.classList.toggle("show");
-        hamburger.classList.toggle("active");
-    });
+    /* =========================
+       HAMBURGER MENU
+    ========================= */
 
-    // Click pe link din meniu → închide meniul
-    mobileMenu.addEventListener("click", function () {
-        mobileMenu.classList.remove("show");
-        hamburger.classList.remove("active");
-    });
+    if (hamburger && mobileMenu) {
 
-    // Click în afara meniului → închide meniul
-    document.addEventListener("click", function (e) {
-        if (
-            mobileMenu.classList.contains("show") &&
-            !mobileMenu.contains(e.target) &&
-            !hamburger.contains(e.target)
-        ) {
-            mobileMenu.classList.remove("show");
-            hamburger.classList.remove("active");
+        hamburger.addEventListener("click", function (e) {
+            e.stopPropagation();
+            mobileMenu.classList.toggle("show");
+            hamburger.classList.toggle("active");
+        });
+
+        // Click pe link din meniu → închide meniul
+        menuLinks.forEach(link => {
+            link.addEventListener("click", function () {
+                mobileMenu.classList.remove("show");
+                hamburger.classList.remove("active");
+            });
+        });
+
+        // Click în afara meniului → închide
+        document.addEventListener("click", function (e) {
+            if (
+                mobileMenu.classList.contains("show") &&
+                !mobileMenu.contains(e.target) &&
+                !hamburger.contains(e.target)
+            ) {
+                mobileMenu.classList.remove("show");
+                hamburger.classList.remove("active");
+            }
+        });
+    }
+
+    /* =========================
+       MENIU ACTIV
+    ========================= */
+
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+    menuLinks.forEach(link => {
+        const linkPage = link.getAttribute("href");
+
+        if (linkPage === currentPage) {
+            link.classList.add("active");
         }
     });
 
