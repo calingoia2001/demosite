@@ -83,7 +83,7 @@ body {
     width: 32px;
     height: 32px;
 
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 
@@ -114,6 +114,10 @@ body {
 
 /* MOBILE MENU */
 @media (max-width: 768px) {
+     .hamburger {
+        display: flex; /* 🔥 apare doar pe mobile */
+    }
+    
     .nav {
         position: relative;
     }
