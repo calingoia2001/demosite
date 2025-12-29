@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Închirieri Auto – Cluj</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    if (hamburger && mobileMenu) {
+        hamburger.addEventListener("click", function () {
+            mobileMenu.classList.toggle("show");
+        });
+    }
+});
+</script>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+    <div class="top-bar-left">
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:+40123456789">+40 123 456 789</a>
+    </div>
+    <div class="top-bar-right">
+        <a href="https://facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+    </div>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="header-container">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+        </div>
+
+        <nav class="nav">
+            <ul class="nav-links" id="mobileMenu">
+                <li><a href="index.html">ACASĂ</a></li>
+                <li><a href="despre.html">DESPRE NOI</a></li>
+                <li><a href="tarife.html">TARIFE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO INCHIRIERI -->
+<section class="inchirieri-hero">
+    <h1>Închirieri Auto</h1>
+    <p>Mașini curate, verificate și pregătite pentru drum</p>
+
+    <a href="tel:+40123456789" class="hero-call">
+        <i class="fa-solid fa-phone"></i>
+        Rezervă acum
+    </a>
+</section>
+
+<!-- SERVICII -->
+<section class="inchirieri-services">
+
+    <h2>Ce oferim</h2>
+
+    <div class="inchirieri-grid">
+        <div class="inchirieri-box">
+            <i class="fa-solid fa-car"></i>
+            <h3>Autoturisme moderne</h3>
+            <p>Mașini confortabile, ideale pentru oraș sau drumuri lungi.</p>
+        </div>
+
+        <div class="inchirieri-box">
+            <i class="fa-solid fa-calendar-days"></i>
+            <h3>Închiriere flexibilă</h3>
+            <p>Pe zi, weekend sau perioade mai lungi.</p>
+        </div>
+
+        <div class="inchirieri-box">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Siguranță garantată</h3>
+            <p>Mașini verificate tehnic și igienizate.</p>
+        </div>
+
+        <div class="inchirieri-box">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <h3>Prețuri corecte</h3>
+            <p>Fără costuri ascunse sau surprize.</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- DE CE NOI -->
+<section class="inchirieri-why">
+
+    <h2>De ce să alegi serviciile noastre?</h2>
+
+    <ul>
+        <li><strong>Flotă variată</strong> – mașini pentru orice nevoie</li>
+        <li><strong>Rezervare rapidă</strong> – simplu și eficient</li>
+        <li><strong>Preluare ușoară</strong> – fără proceduri complicate</li>
+        <li><strong>Asistență inclusă</strong> – liniște pe toată durata închirierii</li>
+    </ul>
+
+</section>
+
+<!-- CTA FINAL -->
+<section class="inchirieri-cta">
+    <h2>Vrei să închiriezi o mașină?</h2>
+    <p>Sună-ne și te ajutăm imediat</p>
+
+    <a href="tel:+40123456789">
+        <i class="fa-solid fa-phone"></i>
+        +40 123 456 789
+    </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-box">
+            <h3>Locația noastră</h3>
+            <a href="https://www.google.com/maps" target="_blank" class="map-link">
+                <i class="fa-solid fa-location-dot"></i>
+                Vezi pe Google Maps
+            </a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+40123456789">+40 123 456 789</a>
+            </p>
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Str. Exemplu nr. 10, Cluj-Napoca
+            </p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2025 Tractări & Închirieri Auto. Toate drepturile rezervate.
+    </div>
+</footer>
+
+<!-- CALL NOW -->
+<a href="tel:+40123456789" class="call-now">
+    <i class="fa-solid fa-phone"></i>
+    Sună acum
+</a>
+
+</body>
+</html>
