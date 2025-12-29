@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (hamburger && mobileMenu) {
         hamburger.addEventListener("click", function () {
             mobileMenu.classList.toggle("show");
+            hamburger.classList.toggle("active");
         });
     }
 
@@ -71,6 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </ul>
             <div class="hamburger" id="hamburger">
                 <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
             </div>
         </nav>
     </div>

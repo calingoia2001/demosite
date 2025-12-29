@@ -77,10 +77,39 @@ body {
 }
 
 /* HAMBURGER */
+
 .hamburger {
-    display: none;
-    font-size: 22px;
+    position: relative;
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     cursor: pointer;
+}
+
+.hamburger i {
+    position: absolute;
+    font-size: 22px;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.hamburger i.fa-xmark {
+    position: absolute;
+    opacity: 0;
+    transform: rotate(-90deg);
+}
+
+.hamburger.active i.fa-bars {
+    opacity: 0;
+    transform: rotate(90deg);
+}
+
+.hamburger.active i.fa-xmark {
+    opacity: 1;
+    transform: rotate(0);
 }
 
 /* MOBILE MENU */
@@ -100,6 +129,18 @@ body {
         padding: 15px 0;
         box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         z-index: 2000;
+
+        /* ANIMAȚIE */
+        opacity: 0;
+        transform: translateY(-10px);
+        pointer-events: none;
+        transition: all 0.25s ease;
+    }
+
+    .nav-links.show {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
     }
 
     .nav-links li {
@@ -810,4 +851,19 @@ body {
     width: 100%;
     height: 2px;
     background-color: #2ecc71;
+}
+
+.service-card,
+.price-card,
+.tractari-box,
+.inchirieri-box {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-card:hover,
+.price-card:hover,
+.tractari-box:hover,
+.inchirieri-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
