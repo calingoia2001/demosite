@@ -467,11 +467,9 @@ body {
     gap: 15px;
 }
 
-.price-card img {
-    width: 120px;
-    height: 90px;
-    object-fit: cover;
-    border-radius: 10px;
+.tarif-icon {
+    font-size: 48px;
+    color: #2ecc71;
     align-self: flex-end;
 }
 
