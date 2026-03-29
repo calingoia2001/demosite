@@ -185,11 +185,11 @@ body {
 
 /* POZE */
 .service-card.tractari {
-    background-image: url("images/tractari.jpg");
+    background-image: url("images/tractari_auto.jpeg");
 }
 
 .service-card.inchirieri {
-    background-image: url("images/inchirieri.jpg");
+    background-image: url("images/inchirieri_auto.jpeg");
 }
 
 /* OVERLAY */
@@ -613,7 +613,7 @@ body {
 
     background-image: 
         linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-        url("images/tractari-hero.jpeg");
+        url("images/tractari_auto_nonstop.jpeg");
 
     background-size: cover;
     background-position: center;
